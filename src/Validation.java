@@ -8,4 +8,15 @@ public class Validation {
 			return false;
 		}
 	}
+	
+	String checkMail(String mail) {
+		if (mail == null || mail.isEmpty()) {
+			return "入力してください";
+		} else if (40 < mail.length()) {
+			return "メールが長すぎます";
+		} else {
+			return null;
+		}
+	}
+	
 }
